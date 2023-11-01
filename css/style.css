@@ -76,7 +76,7 @@ input[type="radio"] {
 
 .others {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .others input {
@@ -91,6 +91,7 @@ input[type="radio"] {
   width: 80%;
   padding: 40px;
 }
+
 
 .writing {
   justify-content: space-around;
@@ -145,20 +146,38 @@ span a {
 
 span {text-align: center;}
 
+
+
+@media screen and (min-width: 200px) {
+  body {.col {margin: auto;
+    max-width: 90%;}
+    .writing input {
+      width: 45%;} }
+}
+
 @media screen and (min-width: 400px) {
-  body {
-  }
+  body {.col {margin: auto;
+    max-width: 80%;}
+    .writing input {
+      width: 70%;}}
 }
 
 @media screen and (min-width: 700px) {
-  body {
-  }
+  body {.col {margin: auto;
+    max-width: 65%;}
+    .writing input {
+      width: 80%;}}
 }
 
 @media screen and (min-width: 900px) {
-  body {
-  }
+  body {.col {margin: auto;
+    max-width: 55%;}
+    .writing input {
+      width: 80%;}}
 }
+
+
+
 
 .col {
   /* display: flex; */
